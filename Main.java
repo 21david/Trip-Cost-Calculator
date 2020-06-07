@@ -257,15 +257,17 @@ public final class Main
 			
 			frame.setSize(950, 750);
 			frame.setVisible(true);
+			frame.setTitle("Trip Cost Calculator");
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//	browser.navigation().loadUrl("https://www.google.com/maps/dir/Rice+University,+6100+Main+St,+Houston,+TX+77005/Lamar+University,+4400+S+M+L+King+Jr+Pkwy,+Beaumont,+TX+77705,+United+States/@29.8760829,-95.3007863,9z/data=!4m13!4m12!1m5!1m1!1s0x8640c064b7f18e1f:0xe2cd9cf065c43eb5!2m2!1d-95.4018312!2d29.7173941!1m5!1m1!1s0x863eca78b5046bcb:0xa10be6fcc4ffd91f!2m2!1d-94.0755748!2d30.0399053");
-			browser.navigation().loadUrl("C:\\Users\\David\\eclipse-workspace\\Gas Calculator\\HTML Codes\\Places Autocomplete and Directions.html");
-		
+			
+		//	String htmlFile = "Places Autocomplete and Directions.html";
+		//	browser.navigation().loadUrl("E:\\Trip Cost Calculator\\" + htmlFile);  // Windows, on a USB in the E drive (in a folder "Trip Cost Calculator")
+		//	browser.navigation().loadUrl("file:///Volumes/NO%20NAME/Trip%20Cost%20Calculator/Places%20Autocomplete%20and%20Directions.html");  // Mac, USB name is "NO NAME" (in a folder "Trip Cost Calculator")
+			
+			browser.navigation().loadUrl("https://places-autocomplete-and-directions.davidespinosa.repl.co/");
 			
 		});
-		
-		
-		
 		
 		
 	}
